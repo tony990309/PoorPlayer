@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title>Playlist Converter</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="memberIndexjs.js" type="text/javascript"></script>
+	
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<style>
+		body {
+			font-family: "Microsoft JhengHei", "Microsoft YaHei", Calibri;
+			font-size: 20px;
+			margin: 0px;
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			background-color: #a1dadd;
+			top: 0px;
+			width: 100%;
+			height: 60px;
+		}
+
+		.logo {
+			font-family: Comic Sans MS;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.btnOutDiv {
+			position: relative;
+		}
+		.btnInDiv {
+			display: flex;
+			position: absolute;
+			bottom: 0px;
+			right:0;
+		}
+
+		.leftPart {
+			width: 640px;
+			height: 100%;
+			display: inline-block;
+		}
+		
+		.rightPart {
+			width: 640px;
+			height: 100%;
+			vertical-align: top;
+			display: inline-block;
+		}
+
+		.playlistDiv {
+			height: 360px;
+			width: 640px;
+			overflow-y: auto;
+			vertical-align: top;
+		}
+
+		ul {
+			margin-top-bottom: 0px 0px;
+		}
+
+		ul, li {
+			list-style: none;
+		}
+
+		ul li {
+			margin: 5px;
+			background-color: #F5F5F5;
+			padding: 3px;
+			border: 1px solid black;
+			border-radius: 8px;
+			font-size: 18px;
+		}
+
+		.plSpan {
+			color: black;
+			float: left;
+		}
+
+		.button {
+			background-color: white;
+			color: black;
+			border: 2px solid #555555;
+			margin: 3px;
+			font-family : inherit;
+		}
+
+		.button:hover {
+			background-color: #555555;
+			color: white;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="logo">Spotify Playlist Converter</div>
+		<div class="btnOutDiv">
+			<div class="btnInDiv">
+				<input class="button" type="button" value="登出" onclick="logOut()">
+			</div>
+		</div>
+	</header><br>
+	
+	<label>請輸入Spotify播放清單網址(注意網址最後若有"#login"字串請移除) : </label>
+	<input type="text" id="playlistUrl" name="playlistUrl" style="width: 300px">
+	<input type="button" value="確認" onclick="parseUrl()"><br><br>
+
+	<div>
+		<div id="leftDiv" class="leftPart">
+			<div id="playerDiv"></div>
+			<div id="plDiv" class="playlistDiv">
+				<label>播放清單名稱:</label>
+				<input type="text" id="listNameTxt" name="listName">
+				<input id="saveBtn" type="button" value="儲存播放清單" onclick="savePlaylist()" disabled="disabled">
+				<ul id="currentPlaylistUl"></ul>
+			</div>
+		</div>
+		
+		<div class="rightPart">
+			<div class="accordion" id="accordion"></div>
+		</div>
+	</div>
+</body>

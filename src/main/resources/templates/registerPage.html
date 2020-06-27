@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Register</title>
+	
+	<style>
+		body {
+			font-family: "Microsoft JhengHei", "Microsoft YaHei", Calibri;
+			font-size: 20px;
+			margin: 0px;
+		}
+		
+		header {
+			display: flex;
+			justify-content: space-between;
+			background-color: #a1dadd;
+			top: 0px;
+			width: 100%;
+			height: 60px;
+		}
+
+		.logo {
+			font-family: Comic Sans MS;
+			font-size: 30px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">Spotify Playlist Converter</div>
+	</header><br>
+	
+	<div>
+		<form action="register" method="POST">
+			<label>帳號 : </label>
+			<input type="text" id="accTxt" name="account"><br>
+			<label>密碼 : </label>
+			<input type="password" id="passTxt" name="password"><br>
+			<label>暱稱 : </label>
+			<input type="text" id="nameTxt" name="userName"><br>
+			
+			<input type="submit" value="註冊">
+		</form>
+	</div>
+</body>
+</html>
