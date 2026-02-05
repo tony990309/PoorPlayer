@@ -1,4 +1,4 @@
-package notu.cs.springboot.service;
+package ntou.cs.springboot.service;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import notu.cs.springboot.entity.Song;
-import notu.cs.springboot.model.PlaylistConverter;
-import notu.cs.springboot.model.YouTubeUrlConverter;
+import ntou.cs.springboot.entity.Song;
+import ntou.cs.springboot.model.PlaylistConverter;
+import ntou.cs.springboot.model.YouTubeUrlConverter;
 
 @Service
 public class ConverterService {

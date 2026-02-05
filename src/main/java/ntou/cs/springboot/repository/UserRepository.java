@@ -1,9 +1,9 @@
-package notu.cs.springboot.repository;
+package ntou.cs.springboot.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import notu.cs.springboot.entity.User;
+import ntou.cs.springboot.entity.User;
 
 @Repository
 public interface UserRepository extends MongoRepository<User, String> {

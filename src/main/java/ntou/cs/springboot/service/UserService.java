@@ -1,10 +1,10 @@
-package notu.cs.springboot.service;
+package ntou.cs.springboot.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import notu.cs.springboot.entity.User;
-import notu.cs.springboot.repository.UserRepository;
+import ntou.cs.springboot.entity.User;
+import ntou.cs.springboot.repository.UserRepository;
 
 @Service
 public class UserService {

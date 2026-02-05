@@ -1,4 +1,4 @@
-package notu.cs.springboot.entity;
+package ntou.cs.springboot.entity;
 
 import java.util.List;
 

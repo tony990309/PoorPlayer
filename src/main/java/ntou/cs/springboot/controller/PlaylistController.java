@@ -1,4 +1,4 @@
-package notu.cs.springboot.controller;
+package ntou.cs.springboot.controller;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -19,11 +19,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import notu.cs.springboot.entity.Playlist;
-import notu.cs.springboot.entity.RegistrationParameter;
-import notu.cs.springboot.service.ConverterService;
-import notu.cs.springboot.service.FunctionService;
-import notu.cs.springboot.service.UserService;
+import ntou.cs.springboot.entity.Playlist;
+import ntou.cs.springboot.entity.RegistrationParameter;
+import ntou.cs.springboot.service.ConverterService;
+import ntou.cs.springboot.service.FunctionService;
+import ntou.cs.springboot.service.UserService;
 
 @Controller
 public class PlaylistController {

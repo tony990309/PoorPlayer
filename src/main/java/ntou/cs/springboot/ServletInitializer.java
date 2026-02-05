@@ -1,4 +1,4 @@
-package notu.cs.springboot;
+package ntou.cs.springboot;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

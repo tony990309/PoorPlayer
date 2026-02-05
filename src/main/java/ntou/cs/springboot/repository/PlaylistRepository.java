@@ -1,11 +1,11 @@
-package notu.cs.springboot.repository;
+package ntou.cs.springboot.repository;
 
 import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import notu.cs.springboot.entity.Playlist;
+import ntou.cs.springboot.entity.Playlist;
 
 @Repository
 public interface PlaylistRepository extends MongoRepository<Playlist, String> {

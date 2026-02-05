@@ -1,4 +1,4 @@
-package notu.cs.springboot.entity;
+package ntou.cs.springboot.entity;
 
 public class Song {
 

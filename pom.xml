@@ -8,7 +8,7 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>notu.cs.springboot</groupId>
+	<groupId>ntou.cs.springboot</groupId>
 	<artifactId>HitoPlaylist</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	

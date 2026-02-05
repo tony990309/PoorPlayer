@@ -1,4 +1,4 @@
-package notu.cs.springboot.model;
+package ntou.cs.springboot.model;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.util.List;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
 
-import notu.cs.springboot.entity.Song;
+import ntou.cs.springboot.entity.Song;
 
 @Component
 public class YouTubeUrlConverter {
